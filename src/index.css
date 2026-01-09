@@ -7,18 +7,18 @@
 @layer base {
   :root {
     --background: 210 25% 98%;
-    --foreground: 220 30% 15%;
+    --foreground: 215 50% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 30% 15%;
+    --card-foreground: 215 50% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 30% 15%;
+    --popover-foreground: 215 50% 18%;
 
-    --primary: 215 80% 28%;
+    --primary: 215 50% 18%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 160 55% 40%;
+    --secondary: 197 45% 55%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 20% 94%;
@@ -32,17 +32,17 @@
 
     --border: 210 20% 88%;
     --input: 210 20% 88%;
-    --ring: 215 80% 28%;
+    --ring: 215 50% 18%;
 
     --radius: 0.75rem;
 
     /* Custom ESM tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(215 80% 28%) 0%, hsl(200 70% 35%) 50%, hsl(160 55% 40%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 50% 18%) 0%, hsl(210 45% 30%) 50%, hsl(197 45% 55%) 100%);
     --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 25% 98%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(160 55% 40%) 0%, hsl(180 50% 45%) 100%);
-    --shadow-soft: 0 4px 20px -4px hsl(220 30% 15% / 0.08);
-    --shadow-elevated: 0 12px 40px -8px hsl(220 30% 15% / 0.12);
-    --shadow-card: 0 2px 12px -2px hsl(220 30% 15% / 0.06);
+    --gradient-accent: linear-gradient(135deg, hsl(197 45% 55%) 0%, hsl(200 50% 60%) 100%);
+    --shadow-soft: 0 4px 20px -4px hsl(215 50% 18% / 0.08);
+    --shadow-elevated: 0 12px 40px -8px hsl(215 50% 18% / 0.12);
+    --shadow-card: 0 2px 12px -2px hsl(215 50% 18% / 0.06);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

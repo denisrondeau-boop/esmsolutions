@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Mail } from "lucide-react";
+import logoEsm from "@/assets/logo-esm.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,9 +8,12 @@ export const Footer = () => {
     <footer className="py-12 bg-foreground text-primary-foreground">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2">
-            <span className="text-2xl font-display font-bold">ESM</span>
-            <span className="text-sm opacity-70">Enterprise Service Management</span>
+          <div className="flex items-center">
+            <img 
+              src={logoEsm} 
+              alt="ESM - Solutions numériques" 
+              className="h-10 w-auto brightness-0 invert"
+            />
           </div>
 
           <div className="flex items-center gap-6">

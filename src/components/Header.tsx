@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoEsm from "@/assets/logo-esm.png";
 
 const navLinks = [
   { label: "Accueil", href: "#hero" },
@@ -22,15 +23,18 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2"
+            className="flex items-center"
           >
-            <span className="text-2xl font-display font-bold text-primary">ESM</span>
-            <span className="hidden sm:block text-sm text-muted-foreground">Enterprise Service Management</span>
+            <img 
+              src={logoEsm} 
+              alt="ESM - Solutions numériques" 
+              className="h-10 md:h-12 w-auto"
+            />
           </motion.div>
 
           {/* Desktop Navigation */}
