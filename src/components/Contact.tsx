@@ -66,8 +66,8 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Email</p>
-                  <a href="mailto:contact@esm-conseil.fr" className="text-muted-foreground hover:text-primary transition-colors">
-                    contact@esm-conseil.fr
+                  <a href="mailto:contact@e-servicemanager.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    contact@e-servicemanager.com
                   </a>
                 </div>
               </div>
