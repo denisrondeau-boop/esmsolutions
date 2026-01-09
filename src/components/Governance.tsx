@@ -31,8 +31,9 @@ export const Governance = () => {
 
   return (
     <section id="gouvernance" className="py-24 relative overflow-hidden" ref={ref}>
-      {/* Background decoration */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl" />
+      {/* Background decoration - more vibrant */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-6 relative">
         <motion.div
@@ -41,7 +42,7 @@ export const Governance = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 mb-4 text-sm font-medium text-primary bg-accent rounded-full">
+          <span className="inline-block px-4 py-2 mb-4 text-sm font-medium text-primary-foreground bg-primary rounded-full shadow-soft">
             Gouvernance SI
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
@@ -54,33 +55,36 @@ export const Governance = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {pillars.map((pillar, index) => (
-            <motion.div
-              key={pillar.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group text-center p-8 rounded-2xl bg-card shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="inline-flex p-4 rounded-2xl bg-accent mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                <pillar.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors" />
-              </div>
-              <h3 className="text-lg font-display font-bold text-foreground mb-3">
-                {pillar.title}
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {pillar.description}
-              </p>
-            </motion.div>
-          ))}
+          {pillars.map((pillar, index) => {
+            const colors = ["bg-primary", "bg-gradient-secondary", "bg-gradient-accent", "bg-gradient-hero"];
+            return (
+              <motion.div
+                key={pillar.title}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="group text-center p-8 rounded-2xl bg-card shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-primary/20"
+              >
+                <div className={`inline-flex p-4 rounded-2xl ${colors[index]} mb-6 group-hover:scale-110 transition-all duration-300 shadow-soft`}>
+                  <pillar.icon className="w-8 h-8 text-primary-foreground" />
+                </div>
+                <h3 className="text-lg font-display font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                  {pillar.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {pillar.description}
+                </p>
+              </motion.div>
+            );
+          })}
         </div>
 
-        {/* Stats */}
+        {/* Stats - more vibrant */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-20 p-8 rounded-2xl bg-gradient-hero"
+          className="mt-20 p-8 rounded-2xl bg-gradient-hero shadow-glow"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
@@ -88,13 +92,18 @@ export const Governance = () => {
               { value: "100%", label: "Clients satisfaits" },
               { value: "50+", label: "Projets réalisés" },
               { value: "24/7", label: "Support disponible" },
-            ].map((stat) => (
-              <div key={stat.label}>
+            ].map((stat, index) => (
+              <motion.div 
+                key={stat.label}
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+              >
                 <p className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-2">
                   {stat.value}
                 </p>
                 <p className="text-sm text-primary-foreground/80">{stat.label}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </motion.div>

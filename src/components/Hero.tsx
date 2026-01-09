@@ -14,11 +14,12 @@ export const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-hero opacity-5" />
+      <div className="absolute inset-0 bg-gradient-hero opacity-10" />
       
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
+      {/* Decorative elements - more vibrant */}
+      <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-6 pt-24 pb-16">
         <div className="max-w-4xl mx-auto text-center">
@@ -27,7 +28,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-2 mb-6 text-sm font-medium text-primary bg-accent rounded-full">
+            <span className="inline-block px-4 py-2 mb-6 text-sm font-medium text-primary-foreground bg-gradient-accent rounded-full shadow-soft">
               Conseil en Systèmes d'Information
             </span>
           </motion.div>
@@ -61,7 +62,7 @@ export const Hero = () => {
             <Button 
               size="lg" 
               onClick={scrollToContact}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8"
+              className="bg-gradient-hero hover:opacity-90 text-primary-foreground px-8 shadow-glow transition-all duration-300 hover:scale-105"
             >
               Demander un diagnostic
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -70,7 +71,7 @@ export const Hero = () => {
               size="lg" 
               variant="outline"
               onClick={scrollToServices}
-              className="border-primary text-primary hover:bg-accent"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             >
               Découvrir nos services
             </Button>
@@ -85,19 +86,19 @@ export const Hero = () => {
           className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto"
         >
           {[
-            { icon: Shield, label: "Sécurité & Conformité", desc: "RGPD, ISO 27001" },
-            { icon: Zap, label: "Innovation IA", desc: "Agents intelligents" },
-            { icon: Users, label: "Accompagnement", desc: "TPE, PME, Collectivités" },
+            { icon: Shield, label: "Sécurité & Conformité", desc: "RGPD, ISO 27001", color: "bg-primary" },
+            { icon: Zap, label: "Innovation IA", desc: "Agents intelligents", color: "bg-gradient-accent" },
+            { icon: Users, label: "Accompagnement", desc: "TPE, PME, Collectivités", color: "bg-gradient-secondary" },
           ].map((item, index) => (
             <motion.div
               key={item.label}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 + index * 0.1 }}
-              className="flex items-center gap-4 p-4 rounded-xl bg-card shadow-card"
+              className="flex items-center gap-4 p-4 rounded-xl bg-card shadow-card hover-lift group cursor-pointer"
             >
-              <div className="p-3 rounded-lg bg-accent">
-                <item.icon className="w-6 h-6 text-primary" />
+              <div className={`p-3 rounded-lg ${item.color} transition-transform duration-300 group-hover:scale-110`}>
+                <item.icon className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
                 <p className="font-semibold text-foreground">{item.label}</p>
