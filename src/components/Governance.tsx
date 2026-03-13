@@ -21,7 +21,7 @@ const pillars = [
   {
     icon: FileCheck,
     title: "Conformité",
-    description: "Accompagnement RGPD et respect des réglementations sectorielles applicables.",
+    description: "Trajectoire de mise en conformité NIS2 et mesure des écarts.\nAccompagnement RGPD et respect",
   },
 ];
 
