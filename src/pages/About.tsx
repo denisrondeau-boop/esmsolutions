@@ -32,7 +32,7 @@ const About = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="rounded-xl bg-primary p-8 shadow-[var(--shadow-elevated)]">
+              className="rounded-xl bg-accent p-8 shadow-[var(--shadow-elevated)]">
               
               <div className="w-12 h-12 rounded-lg bg-primary-foreground/20 flex items-center justify-center mb-4">
                 <ArrowRightLeft className="w-6 h-6 text-primary-foreground" />
