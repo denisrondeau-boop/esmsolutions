@@ -6,25 +6,29 @@ const clientTypes = [
   {
     icon: Briefcase,
     title: "TPE",
-    description: "Accompagnement adapté aux très petites entreprises avec des solutions pragmatiques et un budget maîtrisé.  Exemple package complet en location 3 ans : Poste de travail + suite Cyber-sécurité + suite Bureautique + Backup + Support Technique. ",
+    description: "Accompagnement adapté aux très petites entreprises avec des solutions pragmatiques et un budget maîtrisé.",
+    example: "Package complet en location 3 ans : Poste de travail + suite Cyber-sécurité + suite Bureautique + Backup + Support Technique",
     gradient: "bg-gradient-hero",
   },
   {
     icon: Building2,
     title: "PME",
     description: "Structuration du SI pour accompagner la croissance et optimiser les processus métier.",
+    example: "",
     gradient: "bg-gradient-secondary",
   },
   {
     icon: Users,
     title: "Associations",
     description: "Solutions numériques adaptées aux contraintes et spécificités du secteur associatif.",
+    example: "",
     gradient: "bg-gradient-accent",
   },
   {
     icon: Landmark,
     title: "Collectivités",
     description: "Expertise des enjeux du secteur public et accompagnement à la transformation digitale.",
+    example: "",
     gradient: "bg-primary",
   },
 ];
@@ -75,9 +79,17 @@ export const Clients = () => {
                 <h3 className="text-xl font-display font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {client.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   {client.description}
                 </p>
+                {client.example && (
+                  <div className="mt-4 p-3 rounded-lg bg-muted/50 border border-border/50">
+                    <p className="text-xs font-semibold text-primary mb-1">Exemple de Produits</p>
+                    <p className="text-muted-foreground text-xs leading-relaxed">
+                      {client.example}
+                    </p>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}
