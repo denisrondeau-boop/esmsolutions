@@ -87,7 +87,7 @@ export const Hero = () => {
         >
           {[
             { icon: Shield, label: "Sécurité & Conformité", desc: "RGPD, ISO 27001, NIS2", color: "bg-primary" },
-            { icon: Zap, label: "Fournisseur de Services Managés", desc: "MSP assisté par IA", color: "bg-gradient-accent" },
+            { icon: Zap, label: "Fournisseur de\nServices Managés", desc: "MSP assisté par IA", color: "bg-gradient-accent" },
             { icon: Users, label: "Gestion de projets", desc: "TPE, PME et ESMS", color: "bg-gradient-secondary" },
             { icon: GraduationCap, label: "Formation", desc: "Animation et outils", color: "bg-gradient-hero" },
           ].map((item, index) => (
@@ -102,7 +102,7 @@ export const Hero = () => {
                 <item.icon className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
-                <p className="font-semibold text-foreground">{item.label}</p>
+                <p className="font-semibold text-foreground whitespace-pre-line">{item.label}</p>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>
               </div>
             </motion.div>
