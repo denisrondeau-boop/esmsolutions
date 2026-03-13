@@ -17,24 +17,24 @@ const services = [
   },
   {
     icon: Headphones,
-    title: "Centre de Services",
+    title: "Fournisseur de services Managés",
     description: "Pilotage et optimisation de votre support avec l'aide de l'intelligence artificielle.",
     items: [
-      "Pilotage centre de services partagés",
-      "Audit des processus support",
+      "Pilotage centre de services support utilisateurs",
+      "Outils de supervision de parc et d'accès distant (RMM)",
       "Agents IA pour automatisation",
       "Catalogue de services partenaires",
     ],
   },
   {
     icon: BarChart3,
-    title: "Gouvernance SI",
-    description: "Pilotage stratégique de vos projets de transformation digitale.",
+    title: "Trajectoire de conformité NIS2",
+    description: "Pilotage des projets de mise en conformité NIS2",
     items: [
-      "Pilotage projets de transformation",
-      "Gestion budgétaire et risques",
-      "Analyse KPI et reporting mensuel",
-      "Bilan annuel qualité/coûts/délais",
+      "Inventaire de Parc avec l'outil LANSWEEPER",
+      "Identification et traitement des vulnérabilités",
+      "Analyse du niveau de conformité et reporting mensuel",
+      "Mise en place des scénarios de continuité de services (PCA / PRA)",
     ],
   },
   {
