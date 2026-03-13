@@ -16,12 +16,12 @@ const pillars = [
   {
     icon: Shield,
     title: "Gestion des Risques",
-    description: "Identification et maîtrise des risques : disponibilité, intégrité, confidentialité, traçabilité.",
+    description: "Identification et maîtrise des risques, Solutions de monitoring des menaces (SOC) et outils de Cyber-sécurité.\nSolutions PRA /PCA",
   },
   {
     icon: FileCheck,
     title: "Conformité",
-    description: "Accompagnement RGPD et respect des réglementations sectorielles applicables.",
+    description: "Trajectoire de mise en conformité NIS2 et mesure des écarts.\nAccompagnement RGPD et respect",
   },
 ];
 
@@ -71,7 +71,7 @@ export const Governance = () => {
                 <h3 className="text-lg font-display font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {pillar.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
                   {pillar.description}
                 </p>
               </motion.div>
@@ -91,7 +91,7 @@ export const Governance = () => {
               { value: "15+", label: "Années d'expérience" },
               { value: "100%", label: "Clients satisfaits" },
               { value: "50+", label: "Projets réalisés" },
-              { value: "24/7", label: "Support disponible" },
+              { value: "24/7", label: "Agents Support IA disponibles 24/7" },
             ].map((stat, index) => (
               <motion.div 
                 key={stat.label}
