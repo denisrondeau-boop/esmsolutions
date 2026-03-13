@@ -87,7 +87,7 @@ export const Hero = () => {
         >
           {[
             { icon: Shield, label: "Sécurité & Conformité", desc: "RGPD, ISO 27001, NIS2", color: "bg-primary" },
-            { icon: Zap, label: "Innovation IA", desc: "Agents intelligents", color: "bg-gradient-accent" },
+            { icon: Zap, label: "Centre de Services", desc: "Assisté par IA", color: "bg-gradient-accent" },
             { icon: Users, label: "Accompagnement", desc: "TPE, PME, Collectivités", color: "bg-gradient-secondary" },
           ].map((item, index) => (
             <motion.div
