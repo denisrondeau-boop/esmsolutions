@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Zap, Users } from "lucide-react";
+import { ArrowRight, Shield, Zap, Users, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
