@@ -103,7 +103,7 @@ export const Hero = () => {
               </div>
               <div>
                 <p className="font-semibold text-foreground text-sm">{item.label}</p>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
+                <p className="text-xs text-muted-foreground">{item.desc}</p>
               </div>
             </motion.div>
           ))}
