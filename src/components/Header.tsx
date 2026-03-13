@@ -66,7 +66,7 @@ export const Header = () => {
               transition={{ delay: 0.5 }}
             >
               <Button 
-                onClick={() => scrollToSection("#contact")}
+                onClick={() => navigateTo("#contact")}
                 className="bg-primary hover:bg-primary/90"
               >
                 Nous contacter
