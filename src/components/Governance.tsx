@@ -91,7 +91,7 @@ export const Governance = () => {
               { value: "15+", label: "Années d'expérience" },
               { value: "100%", label: "Clients satisfaits" },
               { value: "50+", label: "Projets réalisés" },
-              { value: "24/7", label: "Support disponible" },
+              { value: "24/7", label: "Agents Support IA disponibles 24/7" },
             ].map((stat, index) => (
               <motion.div 
                 key={stat.label}
