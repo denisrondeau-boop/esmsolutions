@@ -6,7 +6,7 @@ const clientTypes = [
   {
     icon: Briefcase,
     title: "TPE",
-    description: "Accompagnement adapté aux très petites entreprises avec des solutions pragmatiques et un budget maîtrisé. \nExemple package complet en location 3 ans : Poste de travail + suite Cyber-sécurité + suite Bureautique + Backup + Support Technique.\n",
+    description: "Accompagnement adapté aux très petites entreprises avec des solutions pragmatiques et un budget maîtrisé.  Exemple package complet en location 3 ans : Poste de travail + suite Cyber-sécurité + suite Bureautique + Backup + Support Technique. ",
     gradient: "bg-gradient-hero",
   },
   {
