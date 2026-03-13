@@ -16,7 +16,7 @@ const pillars = [
   {
     icon: Shield,
     title: "Gestion des Risques",
-    description: "Identification et maîtrise des risques : disponibilité, intégrité, confidentialité, traçabilité.",
+    description: "Identification et maîtrise des risques, Solutions de monitoring des menaces (SOC) et outils de Cyber-sécurité.\nSolutions PRA /PCA",
   },
   {
     icon: FileCheck,
