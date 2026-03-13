@@ -102,7 +102,7 @@ export const Hero = () => {
                 <item.icon className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
-                <p className="font-semibold text-foreground">{item.label}</p>
+                <p className="font-semibold text-foreground whitespace-pre-line">{item.label}</p>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>
               </div>
             </motion.div>
