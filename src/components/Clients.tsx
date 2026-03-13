@@ -25,7 +25,7 @@ const clientTypes = [
     gradient: "bg-gradient-accent",
   },
   {
-    icon: Landmark,
+    icon: HeartPulse,
     title: "Établissements Médico-sociaux",
     description: "Expertise des enjeux du secteur médico-social et accompagnement à la transformation digitale.",
     example: "",
