@@ -88,7 +88,7 @@ export const Hero = () => {
           {[
             { icon: Shield, label: "Sécurité & Conformité", desc: "RGPD, ISO 27001, NIS2", color: "bg-primary" },
             { icon: Zap, label: "Centre de Services", desc: "Assisté par IA", color: "bg-gradient-accent" },
-            { icon: Users, label: "Accompagnement et transformation du SI", desc: "TPE, PME et ESMS", color: "bg-gradient-secondary" },
+            { icon: Users, label: "Gestion de projets", desc: "TPE, PME et ESMS", color: "bg-gradient-secondary" },
             { icon: GraduationCap, label: "Formation", desc: "Animation et outils", color: "bg-gradient-hero" },
           ].map((item, index) => (
             <motion.div
