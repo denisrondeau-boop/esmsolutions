@@ -54,7 +54,7 @@ export const Header = () => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                onClick={() => scrollToSection(link.href)}
+                onClick={() => navigateTo(link.href, (link as any).isPage)}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 {link.label}
