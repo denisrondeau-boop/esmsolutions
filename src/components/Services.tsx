@@ -20,7 +20,7 @@ const services = [
     title: "Fournisseur de services Managés",
     description: "Pilotage et optimisation de votre support avec l'aide de l'intelligence artificielle.",
     items: [
-      "Pilotage centre de services support utilisateurs",
+      "Centre de services support utilisateurs",
       "Outils de supervision de parc et d'accès distant (RMM)",
       "Agents IA pour la surveillance des systèmes (Backup, Mise à jour)",
       "Catalogue de services partenaires",
