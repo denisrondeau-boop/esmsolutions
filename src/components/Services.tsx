@@ -22,7 +22,7 @@ const services = [
     items: [
       "Pilotage centre de services support utilisateurs",
       "Outils de supervision de parc et d'accès distant (RMM)",
-      "Agents IA pour automatisation",
+      "Agents IA pour la surveillance des systèmes (Backup, Mise à jour)",
       "Catalogue de services partenaires",
     ],
   },
