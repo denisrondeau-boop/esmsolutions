@@ -6,7 +6,7 @@ const clientTypes = [
   {
     icon: Briefcase,
     title: "TPE",
-    description: "Accompagnement adapté aux très petites entreprises avec des solutions pragmatiques et un budget maîtrisé. Inclus la fourniture en location longue durée d'un package informatique : poste de travail, sécurité, support licences bureautique.",
+    description: "Accompagnement adapté aux très petites entreprises avec des solutions pragmatiques et un budget maîtrisé.\nInclus la fourniture en location longue durée d'un package informatique : poste de travail, sécurité, support licences bureautique.",
     gradient: "bg-gradient-hero",
   },
   {
@@ -75,7 +75,7 @@ export const Clients = () => {
                 <h3 className="text-xl font-display font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {client.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
                   {client.description}
                 </p>
               </div>
