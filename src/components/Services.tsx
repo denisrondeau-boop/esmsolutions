@@ -17,7 +17,7 @@ const services = [
   },
   {
     icon: Headphones,
-    title: "Fournisseur de services Managés",
+    title: "Services Managés",
     description: "Pilotage et optimisation de votre support avec l'aide de l'intelligence artificielle.",
     items: [
       "Centre de services support utilisateurs",
