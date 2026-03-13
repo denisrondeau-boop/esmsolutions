@@ -44,7 +44,7 @@ const services = [
     items: [
       "Outils de formation personnalisés",
       "Modules d'auto-formation",
-      "Sessions de formation animées",
+      "Animation de sessions de formation",
       "Accompagnement au changement",
     ],
   },
