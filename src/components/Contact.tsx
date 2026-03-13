@@ -15,15 +15,15 @@ export const Contact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     toast({
       title: "Message envoyé !",
-      description: "Nous vous répondrons dans les plus brefs délais.",
+      description: "Nous vous répondrons dans les plus brefs délais."
     });
-    
+
     setIsSubmitting(false);
     (e.target as HTMLFormElement).reset();
   };
@@ -35,8 +35,8 @@ export const Contact = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+          className="text-center mb-16">
+          
           <span className="inline-block px-4 py-2 mb-4 text-sm font-medium text-primary bg-accent rounded-full">
             Contact
           </span>
@@ -54,8 +54,8 @@ export const Contact = () => {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+            transition={{ duration: 0.6, delay: 0.2 }}>
+            
             <h3 className="text-xl font-display font-bold text-foreground mb-6">
               Coordonnées
             </h3>
@@ -77,8 +77,8 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Téléphone</p>
-                  <a href="tel:+33123456789" className="text-muted-foreground hover:text-primary transition-colors">
-                    +33 1 23 45 67 89
+                  <a href="tel:+33123456789" className="text-muted-foreground hover:text-primary transition-colors">+33 6 69 95 54 28
+
                   </a>
                 </div>
               </div>
@@ -88,8 +88,8 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Adresse</p>
-                  <p className="text-muted-foreground">
-                    Paris, Île-de-France
+                  <p className="text-muted-foreground">19100 - Brive-la-Gaillarde 
+
                   </p>
                 </div>
               </div>
@@ -108,8 +108,8 @@ export const Contact = () => {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
+            transition={{ duration: 0.6, delay: 0.3 }}>
+            
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -121,8 +121,8 @@ export const Contact = () => {
                     name="name"
                     required
                     placeholder="Votre nom"
-                    className="bg-card"
-                  />
+                    className="bg-card" />
+                  
                 </div>
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
@@ -132,8 +132,8 @@ export const Contact = () => {
                     id="company"
                     name="company"
                     placeholder="Votre entreprise"
-                    className="bg-card"
-                  />
+                    className="bg-card" />
+                  
                 </div>
               </div>
               <div>
@@ -146,8 +146,8 @@ export const Contact = () => {
                   type="email"
                   required
                   placeholder="votre@email.com"
-                  className="bg-card"
-                />
+                  className="bg-card" />
+                
               </div>
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
@@ -157,8 +157,8 @@ export const Contact = () => {
                   id="subject"
                   name="subject"
                   placeholder="Objet de votre demande"
-                  className="bg-card"
-                />
+                  className="bg-card" />
+                
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
@@ -170,15 +170,15 @@ export const Contact = () => {
                   required
                   rows={5}
                   placeholder="Décrivez votre projet ou vos besoins..."
-                  className="bg-card resize-none"
-                />
+                  className="bg-card resize-none" />
+                
               </div>
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 size="lg"
                 disabled={isSubmitting}
-                className="w-full bg-primary hover:bg-primary/90"
-              >
+                className="w-full bg-primary hover:bg-primary/90">
+                
                 {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
                 <Send className="ml-2 w-5 h-5" />
               </Button>
@@ -186,6 +186,6 @@ export const Contact = () => {
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
