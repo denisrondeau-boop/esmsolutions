@@ -86,7 +86,7 @@ export const Hero = () => {
           className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto"
         >
           {[
-            { icon: Shield, label: "Sécurité & Conformité", desc: "RGPD, ISO 27001, NIS2", color: "bg-primary" },
+            { icon: Shield, label: "Sécurité & Conformité", desc: "RGPD, NIS2", color: "bg-primary" },
             { icon: Zap, label: "Services Managés", desc: "MSP assisté par IA", color: "bg-gradient-accent" },
             { icon: Users, label: "Gestion de projets", desc: "TPE, PME et ESMS", color: "bg-gradient-secondary" },
             { icon: GraduationCap, label: "Formation", desc: "Animation et outils", color: "bg-gradient-hero" },
