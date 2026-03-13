@@ -97,7 +97,7 @@ export const Header = () => {
                 {navLinks.map((link) => (
                   <button
                     key={link.href}
-                    onClick={() => scrollToSection(link.href)}
+                    onClick={() => navigateTo(link.href, (link as any).isPage)}
                     className="text-left text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                   >
                     {link.label}
