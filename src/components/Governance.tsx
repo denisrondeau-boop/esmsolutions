@@ -71,7 +71,7 @@ export const Governance = () => {
                 <h3 className="text-lg font-display font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {pillar.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
                   {pillar.description}
                 </p>
               </motion.div>
