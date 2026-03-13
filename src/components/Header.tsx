@@ -16,9 +16,17 @@ const navLinks = [
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: "smooth" });
+  const navigateTo = (href: string, isPage?: boolean) => {
+    if (isPage) {
+      window.location.href = href;
+    } else {
+      if (window.location.pathname !== "/") {
+        window.location.href = "/" + href;
+        return;
+      }
+      const element = document.querySelector(href);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
     setIsOpen(false);
   };
 
