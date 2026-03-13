@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Zap, Users } from "lucide-react";
+import { ArrowRight, Shield, Zap, Users, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -83,12 +83,13 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto"
+          className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto"
         >
           {[
             { icon: Shield, label: "Sécurité & Conformité", desc: "RGPD, ISO 27001, NIS2", color: "bg-primary" },
             { icon: Zap, label: "Centre de Services", desc: "Assisté par IA", color: "bg-gradient-accent" },
             { icon: Users, label: "Accompagnement et transformation du SI", desc: "TPE, PME et ESMS", color: "bg-gradient-secondary" },
+            { icon: GraduationCap, label: "Formation", desc: "Animation et outils", color: "bg-gradient-hero" },
           ].map((item, index) => (
             <motion.div
               key={item.label}
