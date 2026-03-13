@@ -9,15 +9,24 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Gouvernance", href: "#gouvernance" },
   { label: "Clients", href: "#clients" },
+  { label: "À propos", href: "/a-propos", isPage: true },
   { label: "Contact", href: "#contact" },
 ];
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: "smooth" });
+  const navigateTo = (href: string, isPage?: boolean) => {
+    if (isPage) {
+      window.location.href = href;
+    } else {
+      if (window.location.pathname !== "/") {
+        window.location.href = "/" + href;
+        return;
+      }
+      const element = document.querySelector(href);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
     setIsOpen(false);
   };
 
@@ -45,7 +54,7 @@ export const Header = () => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                onClick={() => scrollToSection(link.href)}
+                onClick={() => navigateTo(link.href, (link as any).isPage)}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 {link.label}
@@ -57,7 +66,7 @@ export const Header = () => {
               transition={{ delay: 0.5 }}
             >
               <Button 
-                onClick={() => scrollToSection("#contact")}
+                onClick={() => navigateTo("#contact")}
                 className="bg-primary hover:bg-primary/90"
               >
                 Nous contacter
@@ -88,14 +97,14 @@ export const Header = () => {
                 {navLinks.map((link) => (
                   <button
                     key={link.href}
-                    onClick={() => scrollToSection(link.href)}
+                    onClick={() => navigateTo(link.href, (link as any).isPage)}
                     className="text-left text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                   >
                     {link.label}
                   </button>
                 ))}
                 <Button 
-                  onClick={() => scrollToSection("#contact")}
+                  onClick={() => navigateTo("#contact")}
                   className="w-full bg-primary hover:bg-primary/90"
                 >
                   Nous contacter
