@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Building2, Users, Landmark, Briefcase } from "lucide-react";
+import { Building2, Users, HeartPulse, Briefcase } from "lucide-react";
 
 const clientTypes = [
   {
