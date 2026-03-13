@@ -50,7 +50,7 @@ export const Governance = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Nous structurons votre système d'information autour de quatre piliers fondamentaux 
-            pour garantir performance et pérennité.
+            pour garantir performance et sécurité.
           </p>
         </motion.div>
 
