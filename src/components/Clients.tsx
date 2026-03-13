@@ -6,25 +6,29 @@ const clientTypes = [
   {
     icon: Briefcase,
     title: "TPE",
-    description: "Accompagnement adapté aux très petites entreprises avec des solutions pragmatiques et un budget maîtrisé.  Exemple package complet en location 3 ans : Poste de travail + suite Cyber-sécurité + suite Bureautique + Backup + Support Technique. ",
+    description: "Accompagnement adapté aux très petites entreprises avec des solutions pragmatiques et un budget maîtrisé.",
+    example: "Package complet en location 3 ans : Poste de travail + suite Cyber-sécurité + suite Bureautique + Backup + Support Technique",
     gradient: "bg-gradient-hero",
   },
   {
     icon: Building2,
     title: "PME",
     description: "Structuration du SI pour accompagner la croissance et optimiser les processus métier.",
+    example: "",
     gradient: "bg-gradient-secondary",
   },
   {
     icon: Users,
     title: "Associations",
     description: "Solutions numériques adaptées aux contraintes et spécificités du secteur associatif.",
+    example: "",
     gradient: "bg-gradient-accent",
   },
   {
     icon: Landmark,
     title: "Collectivités",
     description: "Expertise des enjeux du secteur public et accompagnement à la transformation digitale.",
+    example: "",
     gradient: "bg-primary",
   },
 ];
