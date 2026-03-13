@@ -75,7 +75,7 @@ export const Clients = () => {
                 <h3 className="text-xl font-display font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {client.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
                   {client.description}
                 </p>
               </div>
