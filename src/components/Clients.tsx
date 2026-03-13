@@ -26,8 +26,8 @@ const clientTypes = [
   },
   {
     icon: Landmark,
-    title: "Collectivités",
-    description: "Expertise des enjeux du secteur public et accompagnement à la transformation digitale.",
+    title: "Établissements Médico-sociaux",
+    description: "Expertise des enjeux du secteur médico-social et accompagnement à la transformation digitale.",
     example: "",
     gradient: "bg-primary",
   },

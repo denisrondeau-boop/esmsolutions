@@ -74,7 +74,7 @@ export const Services = () => {
             Des services adaptés à vos besoins
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Une approche sur mesure pour accompagner TPE, PME, associations et collectivités 
+            Une approche sur mesure pour accompagner TPE, PME, associations et établissements médico-sociaux 
             dans leur transformation numérique.
           </p>
         </motion.div>
