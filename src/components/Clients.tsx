@@ -82,14 +82,6 @@ export const Clients = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {client.description}
                 </p>
-                {client.example && (
-                  <div className="mt-4 p-3 rounded-lg bg-muted/50 border border-border/50">
-                    <p className="text-xs font-semibold text-primary mb-1">Exemple de Produit</p>
-                    <p className="text-muted-foreground text-xs leading-relaxed">
-                      {client.example}
-                    </p>
-                  </div>
-                )}
               </div>
             </motion.div>
           ))}
