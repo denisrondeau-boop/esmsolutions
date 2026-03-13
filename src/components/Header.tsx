@@ -104,7 +104,7 @@ export const Header = () => {
                   </button>
                 ))}
                 <Button 
-                  onClick={() => scrollToSection("#contact")}
+                  onClick={() => navigateTo("#contact")}
                   className="w-full bg-primary hover:bg-primary/90"
                 >
                   Nous contacter
