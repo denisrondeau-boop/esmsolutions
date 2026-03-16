@@ -34,7 +34,7 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="rounded-xl bg-accent p-8 shadow-[var(--shadow-elevated)]">
               
-              <div className="w-12 h-12 rounded-lg bg-accent-foreground/20 flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mb-4">
                 <ArrowRightLeft className="w-6 h-6 text-accent-foreground" />
               </div>
               <p className="text-lg font-semibold text-accent-foreground">
