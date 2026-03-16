@@ -79,7 +79,7 @@ const About = () => {
                   <p>Après avoir opéré comme DSI, puis comme conseil informatique depuis plus de 20 ans, un constat s'est imposé : sans l'ajout de mesures fortes pour la sécurité au quotidien, une PME prend des risques énormes en opérant sur Internet. 
 Ce constat est aussi un aveu d'échec face aux exigences toujours plus grandes de sécurisation et de transformation du Système d'Information.
 </p>
-                  <p className="text-foreground font-medium border-l-4 border-primary pl-6">Un fournisseur de services managés pour gérer le quotidien sans diminuer le niveau de sécurité de votre Système d'Information:  vous disposerez enfin de vos ressources internes pour accompagner les projets de transformation.
+                  <p className="text-foreground font-medium border-l-4 border-primary pl-6">Un fournisseur de services managés pour gérer le quotidien sans diminuer le niveau de sécurité de votre Système d'Information : vous disposerez enfin de des ressources internes pour accompagner vos projets de transformation.
 ESM solutions numériques : un fournisseur de services managés pour gérer le quotidien sans diminuer le niveau de sécurité de votre Système d'Information. Vous disposerez enfin de vos ressources internes pour accompagner les projets de transformation.
 <strong>ESM Solutions Numériques</strong> : un fournisseur de services managés pour gérer le quotidien sans diminuer le niveau de sécurité du SI ; et vous disposez enfin de ressources internes nécessaires pour accompagner les transformations nécessaires.
                   </p>
