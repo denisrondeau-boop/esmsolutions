@@ -16,7 +16,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center">
             
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground font-['Playfair_Display'] mb-6">Les services managés : une solution indispensable, sans coût caché 
+            <h1 className="text-4xl text-foreground font-['Playfair_Display'] mb-6 md:text-4xl font-normal">Les services managés : une solution indispensable, sans coût caché 
 
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
