@@ -34,7 +34,7 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="rounded-xl bg-accent p-8 shadow-[var(--shadow-elevated)]">
               
-              <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-muted-foreground">
                 <ArrowRightLeft className="w-6 h-6 text-accent-foreground" />
               </div>
               <p className="text-lg font-semibold text-accent-foreground">
@@ -48,8 +48,8 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="rounded-xl bg-secondary p-8 shadow-[var(--shadow-elevated)]">
               
-              <div className="w-12 h-12 rounded-lg bg-secondary-foreground/20 flex items-center justify-center mb-4">
-                <Wrench className="w-6 h-6 text-secondary-foreground" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-muted-foreground">
+                <Wrench className="w-6 h-6 text-secondary-foreground bg-muted-foreground" />
               </div>
               <p className="text-lg font-semibold text-secondary-foreground">Les services managés doivent gérer le quotidien du SI, sans coûts cachés
               </p>
