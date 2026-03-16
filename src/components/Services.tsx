@@ -12,7 +12,7 @@ const services = [
       "Audit des processus clés",
       "Organisation et gouvernance SI",
       "Cartographie des risques (DICT)",
-      "Analyse SWOT et schéma directeur",
+      "Schéma Directeur du Système d'Information (SDSI)",
     ],
   },
   {
