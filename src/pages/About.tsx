@@ -76,9 +76,9 @@ const About = () => {
                 </div>
 
                 <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-                  <p>Après avoir opéré comme DSI, puis comme conseil informatique depuis plus de 20 ans, un constat s'est imposé : Sans l'ajout de mesures fortes pour la sécurité au quotidien, une PME prend des risques énormes en opérant sur Internet. Ce constat est souvent un aveu d'échec de vouloir gérer l'opérationnel face aux exigences continues de sécurisation et de transformation du Système d'Information
-
-                  </p>
+                  <p>Après avoir opéré comme DSI, puis comme conseil informatique depuis plus de 20 ans, un constat s'est imposé : sans l'ajout de mesures fortes pour la sécurité au quotidien, une PME prend des risques énormes en opérant sur Internet. 
+Ce constat est aussi un aveu d'échec face aux exigences toujours plus grandes de sécurisation et de transformation du Système d'Information.
+</p>
                   <p className="text-foreground font-medium border-l-4 border-primary pl-6">De ce constat est né ESM Solutions Numériques : un fournisseur de services managés pour gérer le quotidien sans diminuer le niveau de sécurité du SI. 
 Vous devenez enfin disponibles pour accompagner les transformations de votre Système d'Information
 <strong>ESM Solutions Numériques</strong> : un fournisseur de services managés pour gérer le quotidien sans diminuer le niveau de sécurité du SI ; et vous disposez enfin de ressources internes nécessaires pour accompagner les transformations nécessaires.
