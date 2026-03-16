@@ -19,7 +19,7 @@ const About = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground font-['Playfair_Display'] mb-6">Les services managés : une solution indispensable, sans coût caché 
 
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">Après avoir opéré comme DSI puis comme conseil informatique depuis plus de 20 ans, un constat s'est imposé :
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
 
             </p>
           </motion.div>
@@ -76,7 +76,7 @@ const About = () => {
                 </div>
 
                 <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-                  <p>Sans l'ajout de mesures fortes pour la sécurité au quotidien, une PME prend des risques énormes en opérant sur Internet. Ce constat est souvent un aveu d'échec de vouloir gérer l'opérationnel face aux exigences continues de sécurisation et de transformation du Système d'Information
+                  <p>Après avoir opéré comme DSI, puis comme conseil informatique depuis plus de 20 ans, un constat s'est imposé : Sans l'ajout de mesures fortes pour la sécurité au quotidien, une PME prend des risques énormes en opérant sur Internet. Ce constat est souvent un aveu d'échec de vouloir gérer l'opérationnel face aux exigences continues de sécurisation et de transformation du Système d'Information
 
                   </p>
                   <p className="text-foreground font-medium border-l-4 border-primary pl-6">De ce constat est né ESM Solutions Numériques : un fournisseur de services managés pour gérer le quotidien sans diminuer le niveau de sécurité du SI. 
