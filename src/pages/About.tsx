@@ -48,7 +48,7 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="rounded-xl bg-secondary p-8 shadow-[var(--shadow-elevated)]">
               
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-secondary">
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-muted-foreground">
                 <Wrench className="w-6 h-6 text-secondary-foreground" />
               </div>
               <p className="text-lg font-semibold text-secondary-foreground">Les services managés doivent gérer le quotidien du SI, sans coûts cachés
