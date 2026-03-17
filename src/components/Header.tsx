@@ -10,7 +10,7 @@ const navLinks = [
   { label: "Gouvernance", href: "#gouvernance" },
   { label: "Clients", href: "#clients" },
   { label: "À propos", href: "/a-propos", isPage: true },
-  { label: "Contact", href: "#contact" },
+  
 ];
 
 export const Header = () => {
