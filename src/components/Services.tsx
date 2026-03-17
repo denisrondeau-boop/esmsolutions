@@ -54,10 +54,6 @@ export const Services = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const scrollToServices = () => {
-    const el = document.getElementById("services");
-    el?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <section id="services" className="py-24 bg-muted/30 relative overflow-hidden" ref={ref}>
