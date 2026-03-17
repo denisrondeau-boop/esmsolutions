@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import logoEsm from "@/assets/logo-esm.png";
 
 export const Footer = () => {
@@ -12,24 +12,19 @@ export const Footer = () => {
             <img 
               src={logoEsm} 
               alt="ESM - Solutions numériques" 
-              className="h-10 w-auto brightness-0 invert"
+              className="h-10 w-auto"
             />
           </div>
 
           <div className="flex items-center gap-6">
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/denis-rondeau-esm" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full hover:bg-primary-foreground/10 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
-            </a>
-            <a 
-              href="#" 
-              className="p-2 rounded-full hover:bg-primary-foreground/10 transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter className="w-5 h-5" />
             </a>
             <a 
               href="mailto:contact@e-servicemanager.com" 
