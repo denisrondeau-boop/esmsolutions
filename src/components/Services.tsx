@@ -87,8 +87,8 @@ export const Services = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group p-8 rounded-2xl bg-card shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-primary/20 cursor-pointer"
-              onClick={scrollToServices}
+              className="group p-8 rounded-2xl bg-card shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-primary/20"
+
             >
               <div className="flex items-start gap-5">
                 <div className="p-4 rounded-xl bg-gradient-hero group-hover:scale-110 transition-transform duration-300">
