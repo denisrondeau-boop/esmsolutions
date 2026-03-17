@@ -58,6 +58,17 @@ const services = [
 export const Services = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleServiceClick = (anchor: string) => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: anchor } });
+    } else {
+      const el = document.getElementById(anchor);
+      el?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section id="services" className="py-24 bg-muted/30 relative overflow-hidden" ref={ref}>
@@ -91,7 +102,8 @@ export const Services = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group p-8 rounded-2xl bg-card shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-primary/20"
+              className="group p-8 rounded-2xl bg-card shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-primary/20 cursor-pointer"
+              onClick={() => handleServiceClick(service.anchor)}
             >
               <div className="flex items-start gap-5">
                 <div className="p-4 rounded-xl bg-gradient-hero group-hover:scale-110 transition-transform duration-300">
@@ -110,6 +122,9 @@ export const Services = () => {
                       </li>
                     ))}
                   </ul>
+                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    En savoir plus <ArrowRight className="w-4 h-4" />
+                  </div>
                 </div>
               </div>
             </motion.div>
