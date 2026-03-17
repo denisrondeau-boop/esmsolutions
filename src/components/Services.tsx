@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ClipboardCheck, Headphones, BarChart3, GraduationCap, ChevronRight } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { ClipboardCheck, Headphones, BarChart3, GraduationCap, ChevronRight, ArrowRight } from "lucide-react";
 
 const services = [
   {
