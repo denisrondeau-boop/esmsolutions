@@ -111,9 +111,6 @@ export const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                    En savoir plus <ArrowRight className="w-4 h-4" />
-                  </div>
                 </div>
               </div>
             </motion.div>
