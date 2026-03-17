@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 import { ClipboardCheck, Headphones, BarChart3, GraduationCap, ChevronRight, ArrowRight } from "lucide-react";
 
 const services = [
@@ -51,10 +50,15 @@ const services = [
   },
 ];
 
-const scrollToServices = () => {
-  const el = document.getElementById("services");
-  el?.scrollIntoView({ behavior: "smooth" });
-};
+export const Services = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const scrollToServices = () => {
+    const el = document.getElementById("services");
+    el?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="services" className="py-24 bg-muted/30 relative overflow-hidden" ref={ref}>
       {/* Decorative background */}
@@ -88,7 +92,7 @@ const scrollToServices = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group p-8 rounded-2xl bg-card shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-primary/20 cursor-pointer"
-              onClick={() => handleServiceClick(service.anchor)}
+              onClick={scrollToServices}
             >
               <div className="flex items-start gap-5">
                 <div className="p-4 rounded-xl bg-gradient-hero group-hover:scale-110 transition-transform duration-300">
