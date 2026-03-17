@@ -97,6 +97,7 @@ export const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 + index * 0.1 }}
               className="flex items-center gap-4 p-4 rounded-xl bg-card shadow-card hover-lift group cursor-pointer"
+              onClick={scrollToServices}
             >
               <div className={`p-3 rounded-lg ${item.color} transition-transform duration-300 group-hover:scale-110`}>
                 <item.icon className="w-6 h-6 text-primary-foreground" />
