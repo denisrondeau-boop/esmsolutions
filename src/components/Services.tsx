@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 import { ClipboardCheck, Headphones, BarChart3, GraduationCap, ChevronRight, ArrowRight } from "lucide-react";
 
 const services = [
   {
     icon: ClipboardCheck,
     title: "Conseil & Diagnostic",
-    anchor: "conseil",
     description: "Audit complet de vos ressources informatiques et cartographie des risques pour un SI optimisé.",
     items: [
       "Audit des processus clés",
@@ -20,7 +18,6 @@ const services = [
   {
     icon: Headphones,
     title: "Services Managés",
-    anchor: "services-manages",
     description: "Pilotage et optimisation de votre support avec l'aide de l'intelligence artificielle.",
     items: [
       "Centre de services support utilisateurs",
@@ -32,7 +29,6 @@ const services = [
   {
     icon: BarChart3,
     title: "Trajectoire de conformité NIS2",
-    anchor: "conformite-nis2",
     description: "Pilotage des projets de mise en conformité NIS2",
     items: [
       "Inventaire de Parc avec l'outil LANSWEEPER",
@@ -44,7 +40,6 @@ const services = [
   {
     icon: GraduationCap,
     title: "Formation",
-    anchor: "formation",
     description: "Développement des compétences de vos équipes sur les outils et bonnes pratiques.",
     items: [
       "Outils de formation personnalisés",
@@ -58,16 +53,10 @@ const services = [
 export const Services = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const navigate = useNavigate();
-  const location = useLocation();
 
-  const handleServiceClick = (anchor: string) => {
-    if (location.pathname !== "/") {
-      navigate("/", { state: { scrollTo: anchor } });
-    } else {
-      const el = document.getElementById(anchor);
-      el?.scrollIntoView({ behavior: "smooth" });
-    }
+  const scrollToServices = () => {
+    const el = document.getElementById("services");
+    el?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -103,7 +92,7 @@ export const Services = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group p-8 rounded-2xl bg-card shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-primary/20 cursor-pointer"
-              onClick={() => handleServiceClick(service.anchor)}
+              onClick={scrollToServices}
             >
               <div className="flex items-start gap-5">
                 <div className="p-4 rounded-xl bg-gradient-hero group-hover:scale-110 transition-transform duration-300">
