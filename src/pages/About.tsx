@@ -16,7 +16,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center">
             
-            <h1 className="text-4xl text-foreground font-['Playfair_Display'] mb-6 md:text-4xl font-normal">Les services managés : une solution indispensable, sans coût caché 
+            <h1 className="text-4xl text-foreground font-['Playfair_Display'] mb-6 md:text-4xl font-normal">Les services managés : des solutions sans coût caché, pour gérer la sécurité de vos actifs informatiques&nbsp;
 
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
@@ -38,7 +38,7 @@ const About = () => {
                 <ArrowRightLeft className="w-6 h-6 text-accent-foreground" />
               </div>
               <p className="text-lg font-semibold text-accent-foreground">
-                Concentrons-nous sur les projets de transformations
+                "Concentrez-vous sur les projets de transformations de votre SI, on s'occupe de l'opérationnel"
               </p>
             </motion.div>
 
@@ -51,7 +51,7 @@ const About = () => {
               <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-muted-foreground">
                 <Wrench className="w-6 h-6 text-secondary-foreground" />
               </div>
-              <p className="text-lg font-semibold text-secondary-foreground">Les services managés doivent gérer le quotidien du SI, sans coûts cachés
+              <p className="text-lg font-semibold text-secondary-foreground">"Les services managés : des solutions sans coût caché, automatisées et supervisées par IA pour plus de réactivité !"&nbsp;
               </p>
             </motion.div>
           </div>
