@@ -21,7 +21,7 @@ export const Hero = () => {
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-3xl" />
 
-      <div className="container mx-auto px-6 pt-24 pb-16">
+      <div className="container mx-auto px-6 pt-24 pb-16 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
