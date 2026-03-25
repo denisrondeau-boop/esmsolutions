@@ -24,7 +24,7 @@ const pillars = [
   },
   {
     icon: Shield,
-    title: "Sécurité du parc informatique",
+    title: "Sécurité du parc informatique et des Serveurs",
     items: [
       "Solutions RMM (Remote Monitoring and Management)",
       "Backup workplace et Serveurs",
