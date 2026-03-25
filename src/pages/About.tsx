@@ -34,10 +34,12 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="rounded-xl bg-accent p-8 shadow-[var(--shadow-elevated)]">
               
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-primary/15">
-                <ArrowRightLeft className="w-6 h-6 text-primary" />
+              <div className="flex items-center gap-4 mb-3 border-b-2 border-accent-foreground/20 pb-3">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-primary/15 shrink-0">
+                  <ArrowRightLeft className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-accent-foreground font-['Playfair_Display']">Déléguer la surveillance</h3>
               </div>
-              <h3 className="text-2xl font-bold text-accent-foreground font-['Playfair_Display'] mb-3 border-b-2 border-accent-foreground/20 pb-2">Déléguer la surveillance</h3>
               <p className="text-base text-accent-foreground/80">
                 "Concentrez-vous sur les projets de transformations de votre SI, on s'occupe de l'opérationnel"
               </p>
@@ -49,10 +51,12 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="rounded-xl bg-secondary p-8 shadow-[var(--shadow-elevated)]">
               
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-primary/15">
-                <Wrench className="w-6 h-6 text-primary" />
+              <div className="flex items-center gap-4 mb-3 border-b-2 border-secondary-foreground/20 pb-3">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-primary/15 shrink-0">
+                  <Wrench className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-secondary-foreground font-['Playfair_Display']">Piloter la Sécurité</h3>
               </div>
-              <h3 className="text-2xl font-bold text-secondary-foreground font-['Playfair_Display'] mb-3 border-b-2 border-secondary-foreground/20 pb-2">Piloter la Sécurité</h3>
               <p className="text-base text-secondary-foreground/80">"Les services managés : des solutions sans coût caché, pour automatiser, superviser et garantir la sécurité informatique de vos actifs !"&nbsp;
               </p>
             </motion.div>
