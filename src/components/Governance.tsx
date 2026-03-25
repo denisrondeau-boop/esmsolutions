@@ -6,12 +6,12 @@ const pillars = [
   {
     icon: Target,
     title: "Schéma Directeur",
-    description: "Vision stratégique et roadmap de transformation de votre SI alignée sur vos objectifs métier.",
+    description: " - Vision stratégique du SI\n - Roadmap de transformation \n -  Alignement métier\n- Pilotage budgétaire\n",
   },
   {
     icon: TrendingUp,
     title: "Pilotage & ROI",
-    description: "- Suivi budgétaire rigoureux et mesure du retour sur investissement de vos projets IT.",
+    description: "- Pilotage des transformations du SI\n- mesure du ROI\n-  investissement de vos projets IT.\n",
   },
   {
     icon: Shield,
