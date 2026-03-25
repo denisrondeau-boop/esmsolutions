@@ -37,8 +37,8 @@ const About = () => {
               <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-primary/15">
                 <ArrowRightLeft className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-accent-foreground font-['Playfair_Display'] mb-2">Déléguer la surveillance</h3>
-              <p className="text-lg font-semibold text-accent-foreground">
+              <h3 className="text-2xl font-bold text-accent-foreground font-['Playfair_Display'] mb-3 border-b-2 border-accent-foreground/20 pb-2">Déléguer la surveillance</h3>
+              <p className="text-base text-accent-foreground/80">
                 "Concentrez-vous sur les projets de transformations de votre SI, on s'occupe de l'opérationnel"
               </p>
             </motion.div>
@@ -52,8 +52,8 @@ const About = () => {
               <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-primary/15">
                 <Wrench className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-secondary-foreground font-['Playfair_Display'] mb-2">Piloter la Sécurité</h3>
-              <p className="text-lg font-semibold text-secondary-foreground">"Les services managés : des solutions sans coût caché, pour automatiser, superviser et garantir la sécurité informatique de vos actifs !"&nbsp;
+              <h3 className="text-2xl font-bold text-secondary-foreground font-['Playfair_Display'] mb-3 border-b-2 border-secondary-foreground/20 pb-2">Piloter la Sécurité</h3>
+              <p className="text-base text-secondary-foreground/80">"Les services managés : des solutions sans coût caché, pour automatiser, superviser et garantir la sécurité informatique de vos actifs !"&nbsp;
               </p>
             </motion.div>
           </div>
