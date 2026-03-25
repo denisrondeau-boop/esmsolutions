@@ -1,27 +1,44 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Target, TrendingUp, Shield, FileCheck } from "lucide-react";
+import { Target, TrendingUp, Shield, FileCheck, ChevronRight } from "lucide-react";
 
 const pillars = [
   {
     icon: Target,
     title: "Schéma Directeur",
-    description: " - Vision stratégique du SI\n - Roadmap de transformation \n -  Alignement métier\n- Pilotage budgétaire\n",
+    items: [
+      "Vision stratégique du SI",
+      "Roadmap de transformation",
+      "Alignement métier",
+      "Pilotage budgétaire",
+    ],
   },
   {
     icon: TrendingUp,
     title: "Pilotage & ROI",
-    description: "- Pilotage des transformations du SI\n- mesure du ROI\n-  investissement de vos projets IT.\n",
+    items: [
+      "Pilotage des transformations du SI",
+      "Mesure du ROI",
+      "Investissement de vos projets IT",
+    ],
   },
   {
     icon: Shield,
     title: "Sécurité du parc informatique",
-    description: "- Solutions RMM (Remote Monitoring and Management),\n- Backup workplace et Serveurs,\n- Cyber-sécurité et SOC, - Solutions PRA /PCA",
+    items: [
+      "Solutions RMM (Remote Monitoring and Management)",
+      "Backup workplace et Serveurs",
+      "Cyber-sécurité et SOC",
+      "Solutions PRA / PCA",
+    ],
   },
   {
     icon: FileCheck,
     title: "Pilotage de la Conformité",
-    description: "- Trajectoire de mise en conformité NIS2 - Accompagnement RGPD",
+    items: [
+      "Trajectoire de mise en conformité NIS2",
+      "Accompagnement RGPD",
+    ],
   },
 ];
 
@@ -68,12 +85,17 @@ export const Governance = () => {
                 <div className={`inline-flex p-4 rounded-2xl ${colors[index]} mb-6 group-hover:scale-110 transition-all duration-300 shadow-soft`}>
                   <pillar.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="text-lg font-display font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-display font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                   {pillar.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
-                  {pillar.description}
-                </p>
+                <ul className="space-y-2 text-left">
+                  {pillar.items.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <ChevronRight className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </motion.div>
             );
           })}
