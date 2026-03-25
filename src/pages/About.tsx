@@ -51,7 +51,7 @@ const About = () => {
               <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-muted-foreground">
                 <Wrench className="w-6 h-6 text-secondary-foreground" />
               </div>
-              <p className="text-lg font-semibold text-secondary-foreground">"Les services managés : des solutions sans coût caché, automatisées et supervisées par IA pour plus de réactivité !"&nbsp;
+              <p className="text-lg font-semibold text-secondary-foreground">"Les services managés : des solutions sans coût caché, pour automatiser, superviser et garantir la sécurité informatique de vos actifs !"&nbsp;
               </p>
             </motion.div>
           </div>
