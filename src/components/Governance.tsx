@@ -11,17 +11,17 @@ const pillars = [
   {
     icon: TrendingUp,
     title: "Pilotage & ROI",
-    description: "Suivi budgétaire rigoureux et mesure du retour sur investissement de vos projets IT.",
+    description: "- Suivi budgétaire rigoureux et mesure du retour sur investissement de vos projets IT.",
   },
   {
     icon: Shield,
-    title: "Pi",
-    description: "Identification et maîtrise des risques, Solutions de monitoring des menaces (SOC) et outils de Cyber-sécurité.\nSolutions PRA /PCA",
+    title: "Sécurité et surveillance du parc informatique",
+    description: "- Solutions RMM (Remote Monitoring and Management),\n- Backup workplace et Serveurs,\n- Cyber-sécurité et SOC, - Solutions PRA /PCA",
   },
   {
     icon: FileCheck,
-    title: "Conformité",
-    description: "Trajectoire de mise en conformité NIS2 et mesure des écarts.\nAccompagnement RGPD et respect",
+    title: "Pilotage de la Conformité",
+    description: "- Trajectoire de mise en conformité NIS2 - Accompagnement RGPD",
   },
 ];
 
