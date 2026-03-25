@@ -15,7 +15,7 @@ const pillars = [
   },
   {
     icon: Shield,
-    title: "Gestion des Risques",
+    title: "Pi",
     description: "Identification et maîtrise des risques, Solutions de monitoring des menaces (SOC) et outils de Cyber-sécurité.\nSolutions PRA /PCA",
   },
   {
