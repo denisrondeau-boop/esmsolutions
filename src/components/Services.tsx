@@ -42,7 +42,7 @@ const services = [
     title: "Formation",
     description: "Développement des compétences de vos équipes sur les outils et bonnes pratiques.",
     items: [
-      "Outils de formation personnalisés",
+      "Outils de formation personnalisés, renforcés par IA",
       "Exercices et apprentissage en auto-formation",
       "Animation de sessions de formation",
       "Accompagnement au changement",
