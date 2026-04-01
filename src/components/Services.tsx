@@ -33,7 +33,7 @@ const services = [
     items: [
       "Inventaire de parc et cartographie des réseaux (ITAM)",
       "Identification et traitement des vulnérabilités (EDR, XDR, SOC)",
-      "Analyse du niveau de conformité et reporting mensuel",
+      "Tableau de bord de conformité et reporting mensuel",
       "Mise en place des scénarios de continuité de services (PCA / PRA)",
     ],
   },
