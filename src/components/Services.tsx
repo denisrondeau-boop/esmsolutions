@@ -33,7 +33,7 @@ const services = [
     description: "Pilotage des projets de mise en conformité NIS2",
     items: [
       "Phase 1 : Cadrage et gouvernance du projet",
-      "Phase 2 : Evaluation de la conformité (sur 18 domaines NIS2)",
+      "Phase 2 : Evaluation de la conformité (sur les 18 domaines NIS2)",
       "Phase 3 : Remédiation priorisée, traitement des écarts",
       "Phase 4 : Pilotage en continu : revue mensuelle des indicateurs",
     ],
