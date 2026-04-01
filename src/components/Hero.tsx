@@ -50,7 +50,7 @@ export const Hero = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
             Diagnostic, conseil et pilotage de vos projets informatiques. 
-            Optimisez vos ressources grâce à l'intelligence artificielle et une gouvernance adaptée à votre structure.
+            Optimisez vos ressources grâce à des outils innovants et à une gouvernance adaptée à votre structure.
           </motion.p>
 
           <motion.div
