@@ -22,7 +22,7 @@ const services = [
     items: [
       "Centre de services support utilisateurs",
       "Supervision de parc, suivi des mises jours et des sauvegardes",
-      "Surveillance des systèmes avec BitDefender GravityZone (EDR, XDR, SOC), patch management, conformité des équipements.",
+      "Surveillance des systèmes avec BitDefender GravityZone (EDR, XDR, SOC), patch management, conformité des équipements",
       "Solutions de continuité d'activité en cas de sinistre : PCA/ PRA",
     ],
   },
