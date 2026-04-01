@@ -13,6 +13,7 @@ const services = [
       "Organisation et gouvernance SI",
       "Cartographie des risques (DICT)",
       "Schéma Directeur du Système d'Information (SDSI)",
+      "Amélioration de la performance opérationnelle",
     ],
   },
   {
