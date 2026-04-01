@@ -31,8 +31,8 @@ const services = [
     title: "Trajectoire de conformité NIS2",
     description: "Pilotage des projets de mise en conformité NIS2",
     items: [
-      "Inventaire de Parc avec l'outil LANSWEEPER",
-      "Identification et traitement des vulnérabilités",
+      "Inventaire de parc et cartographie des réseaux (ITAM)",
+      "Identification et traitement des vulnérabilités (EDR, XDR, SOC)",
       "Analyse du niveau de conformité et reporting mensuel",
       "Mise en place des scénarios de continuité de services (PCA / PRA)",
     ],
