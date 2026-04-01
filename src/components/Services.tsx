@@ -102,7 +102,7 @@ export const Services = () => {
                   <p className="text-muted-foreground mb-4">{service.description}</p>
                   <ul className="space-y-2">
                     {service.items.map((item) => (
-                      <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                      <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors whitespace-pre-line">
                         <ChevronRight className="w-4 h-4 text-secondary flex-shrink-0" />
                         {item}
                       </li>
