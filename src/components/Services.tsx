@@ -21,7 +21,7 @@ const services = [
     title: "Services Managés",
     description: "Pilotage et optimisation de votre sécurité avec l'aide d'outils de dernière génération ",
     items: [
-      "Centre de services managés",
+      "Centre de services managés\nOnboarding, configuration Poste, etc",
       "Supervision de parc, suivi des mises jours et des sauvegardes",
       "Surveillance des systèmes avec BitDefender GravityZone (EDR, XDR, SOC), patch management, conformité des équipements",
       "Solutions de continuité d'activité en cas de sinistre : PCA/ PRA",
@@ -102,7 +102,7 @@ export const Services = () => {
                   <p className="text-muted-foreground mb-4">{service.description}</p>
                   <ul className="space-y-2">
                     {service.items.map((item) => (
-                      <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                      <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors whitespace-pre-line">
                         <ChevronRight className="w-4 h-4 text-secondary flex-shrink-0" />
                         {item}
                       </li>
