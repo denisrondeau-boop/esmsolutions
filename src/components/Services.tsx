@@ -18,12 +18,12 @@ const services = [
   {
     icon: Headphones,
     title: "Services Managés",
-    description: "Pilotage et optimisation de votre support avec l'aide de l'intelligence artificielle.",
+    description: "Pilotage et optimisation de votre sécurité avec l'aide d'outils de dernière génération ",
     items: [
       "Centre de services support utilisateurs",
-      "Outils de supervision de parc et d'accès distant (RMM)",
-      "Agents IA pour la surveillance des systèmes (Backup, Mise à jour)",
-      "Catalogue de services partenaires",
+      "Supervision de parc, des mises jours, et patch management",
+      "Surveillance des systèmes avec BitDefender GravityZone (EDR, XDR, SOC)",
+      "Mise en place de solutions de continuité d'activité en cas de sinistre : PCA/ PRA",
     ],
   },
   {
@@ -31,7 +31,7 @@ const services = [
     title: "Trajectoire de conformité NIS2",
     description: "Pilotage des projets de mise en conformité NIS2",
     items: [
-      "Inventaire de parc et cartographie des réseaux (ITAM)",
+      "Phase 1 : Cadrage et gouvernance",
       "Identification et traitement des vulnérabilités (EDR, XDR, SOC)",
       "Tableau de bord de conformité et reporting mensuel",
       "Mise en place des scénarios de continuité de services (PCA / PRA)",
