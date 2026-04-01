@@ -32,9 +32,9 @@ const services = [
     description: "Pilotage des projets de mise en conformité NIS2",
     items: [
       "Phase 1 : Cadrage et gouvernance",
-      "Identification et traitement des vulnérabilités (EDR, XDR, SOC)",
-      "Tableau de bord de conformité et reporting mensuel",
-      "Mise en place des scénarios de continuité de services (PCA / PRA)",
+      "Phase 2 : Evaluation de la conformité (18 domaines NIS2)",
+      "Phase 3 : Remédiation priorisée, traitement des écarts",
+      "Phase 4 : Pilotage en continu : revue mensuelle des indicateurs",
     ],
   },
   {
