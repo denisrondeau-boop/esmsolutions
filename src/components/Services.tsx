@@ -21,7 +21,7 @@ const services = [
     description: "Pilotage et optimisation de votre sécurité avec l'aide d'outils de dernière génération ",
     items: [
       "Centre de services support utilisateurs",
-      "Supervision de parc, des mises jours, et patch management",
+      "Supervision de parc, déploiement des mises jours et patch management",
       "Surveillance des systèmes avec BitDefender GravityZone (EDR, XDR, SOC)",
       "Mise en place de solutions de continuité d'activité en cas de sinistre : PCA/ PRA",
     ],
@@ -42,7 +42,7 @@ const services = [
     title: "Formation",
     description: "Développement des compétences de vos équipes sur les outils et bonnes pratiques.",
     items: [
-      "Outils de formation personnalisés",
+      "Outils de formation personnalisés, renforcés par IA",
       "Exercices et apprentissage en auto-formation",
       "Animation de sessions de formation",
       "Accompagnement au changement",
