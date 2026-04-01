@@ -87,7 +87,7 @@ export const Hero = () => {
         >
           {[
             { icon: ClipboardCheck, label: "Conseil & Diagnostic", desc: "Schéma Directeur du SI", color: "bg-primary" },
-            { icon: Headphones, label: "Services Managés", desc: "Assistés par IA", color: "bg-gradient-accent" },
+            { icon: Headphones, label: "Services Managés", desc: "Support et Sécurité", color: "bg-gradient-accent" },
             { icon: BarChart3, label: "Trajectoire de conformité NIS2", desc: "PME et ESMS", color: "bg-gradient-secondary" },
             { icon: GraduationCap, label: "Formation", desc: "Animation et outils", color: "bg-gradient-hero" },
           ].map((item, index) => (
